@@ -2,8 +2,15 @@ import './TodoHeader.scss'
 
 function TodoHeader() {
 
-  function handleClick() {
-    alert('You clicked me!');
+  function handleClick(): void {
+    const form: HTMLElement | null = document.getElementById('form');
+    // const input: HTMLElement | null = document.getElementById('input');
+    // const stub: HTMLElement | null = document.getElementById('stub');
+    // const list: HTMLElement | null = document.getElementById('list');
+
+    // let tasks: any = [];
+    console.log(form);
+    
   }
 
   return(
