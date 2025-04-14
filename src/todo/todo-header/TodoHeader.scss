@@ -1,25 +1,12 @@
 .todo {
-  &__header{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  &__form{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
   &__input{
-    padding: 5px;
-    margin-right: 10px;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid #000;
-    font-size: 25px;
-    width: 90%;
+    // padding: 5px;
+    // margin-right: 10px;
+    // border: none;
+    // outline: none;
+    // border-bottom: 1px solid #000;
+    // font-size: 25px;
+    // width: 90%;
     @media(max-width: 375px) {
       font-size: 20px;
     }
