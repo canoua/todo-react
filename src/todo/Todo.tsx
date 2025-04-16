@@ -2,8 +2,8 @@ import './scss/buttons.scss'
 import './scss/list.scss'
 import './Todo.scss'
 
-import TodoHeader from './todo-header/TodoHeader'
-import TodoOutput from './todo-output/TodoOutput'
+import TodoHeader from './TodoHeader'
+import TodoOutput from './TodoOutput'
 import styled from 'styled-components'
 
 function Todo() {
@@ -20,6 +20,21 @@ function Todo() {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @media(max-width: 991px) {
+      width: 60%;
+    }
+    @media(max-width: 767px) {
+      width: 75%;
+    }
+    @media(max-width: 575px) {
+      width: 100%;
+      margin-bottom: 30px;
+      justify-content: flex-start;
+      min-height: auto;
+    }
+    @media(max-width: 375px) {
+      padding-top: 10px;
+    }
   `
 
   return (

@@ -11,11 +11,11 @@ export default createGlobalStyle`
     font-family: 'Lato', sans-serif;
   }
 
-  li{
+  li {
     list-style: none;
   }
 
-  .wrapper{
+  .wrapper {
     @media(min-width: 1600px) {
       max-width: 1600px;
       margin: 0 auto;
@@ -29,18 +29,18 @@ export default createGlobalStyle`
     }
   }
 
-  .title{
+  .title {
     @media(max-width: 575px) {
       font-size: 23px;
     }
   }
 
-  .fade{
+  .fade {
     opacity: 0;
     transition: all .5s;
   }
 
-  .title-2{
+  .title-2 {
     text-align: center;
     margin-bottom: 10px;
     font-weight: 400;
@@ -49,7 +49,7 @@ export default createGlobalStyle`
     }
   }
 
-  .btn{
+  .btn {
     cursor: pointer;
   }
 

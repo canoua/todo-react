@@ -1,4 +1,3 @@
-import './TodoHeader.scss'
 import styled from 'styled-components';
 
 function TodoHeader() {
@@ -38,6 +37,10 @@ function TodoHeader() {
     border-bottom: 1px solid #000;
     font-size: 25px;
     width: 90%; 
+    
+    @media(max-width: 375px) {
+      font-size: 20px;
+    }
   `
 
   const Button = styled.button `

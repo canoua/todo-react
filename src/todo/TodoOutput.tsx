@@ -1,5 +1,4 @@
-import './TodoOutput.scss'
-import cat from './../../assets/cat.jpg'
+import cat from './../assets/cat.jpg'
 import styled from 'styled-components'
 
 function TodoOutput() {
@@ -20,6 +19,10 @@ function TodoOutput() {
     height: 100%;
     width: 100%;
     transition: .3s;
+    
+    @media(max-width: 575px) {
+      padding: 5px;
+    }
   `
   
   return(
