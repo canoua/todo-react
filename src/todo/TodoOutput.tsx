@@ -24,6 +24,7 @@ function TodoOutput() {
       padding: 5px;
     }
   `
+
   
   return(
     <>
@@ -33,6 +34,7 @@ function TodoOutput() {
           <div className="stub" id="stub">
             <img className="list-done__stub-img" src={cat} alt="cat" />
           </div>  
+          {/* <List></List> */}
           <ul className="list" id="list"></ul>
         </TodoOutputContent>
       </TodoOutput>

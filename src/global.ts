@@ -49,11 +49,7 @@ export default createGlobalStyle`
     }
   }
 
-  .btn {
-    cursor: pointer;
-  }
-
-  .btn:not([disabled]):hover{
+  .btn:not([disabled]):hover {
     opacity: 0.7;
   }
 `

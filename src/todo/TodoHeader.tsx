@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Button } from './Button';
 
 function TodoHeader() {
 
@@ -43,12 +44,11 @@ function TodoHeader() {
     }
   `
 
-  const Button = styled.button `
+  const ButtonAdd = styled(Button) `
     background-color: #000;
     color: #fff;
     padding: 0px 10px;
     border: none;
-    border-radius: 5px;
     font-size: 25px;
     width: 10%;
   `
@@ -66,7 +66,7 @@ function TodoHeader() {
         <Title>Что хотите сделать?</Title>
         <Form>
           <Input placeholder='Дело'></Input>
-          <Button type='submit' onClick={handleClick}>+</Button>
+          <ButtonAdd type='submit' onClick={handleClick}>+</ButtonAdd>
         </Form>
         <Error>введите название своего дела</Error>
       </Header> 
