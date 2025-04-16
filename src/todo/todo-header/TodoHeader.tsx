@@ -4,12 +4,8 @@ import styled from 'styled-components';
 function TodoHeader() {
 
   function handleClick(): void {
-    // const form: HTMLElement | null = document.getElementById('form');
-    // const input: HTMLElement | null = document.getElementById('input');
-    // const stub: HTMLElement | null = document.getElementById('stub');
-    // const list: HTMLElement | null = document.getElementById('list');
-
     // let tasks: any = [];
+    console.log('hhh');
   }
 
   const Header = styled.header `
@@ -28,7 +24,6 @@ function TodoHeader() {
   `
 
   const Title = styled.h1 `
-    width: 100%;
     margin-bottom: 10px;
     font-size: 30px;
     line-height: 120%;
@@ -44,7 +39,23 @@ function TodoHeader() {
     font-size: 25px;
     width: 90%; 
   `
-  // Input.
+
+  const Button = styled.button `
+    background-color: #000;
+    color: #fff;
+    padding: 0px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    width: 10%;
+  `
+
+  const Error = styled.div `
+    color: red;
+    opacity: 0;
+    height: 0;
+    transition: all .3s;
+  `
 
   return(
     <>
@@ -52,10 +63,9 @@ function TodoHeader() {
         <Title>Что хотите сделать?</Title>
         <Form>
           <Input placeholder='Дело'></Input>
-          {/* <input type="text" placeholder="Дело" className="todo__input" id="input" autoComplete="on" /> */}
-          <button className="add-btn btn" id="add-btn" type="submit" onClick={handleClick}>+</button>
+          <Button type='submit' onClick={handleClick}>+</Button>
         </Form>
-        <div className="error" id="error">введите название своего дела</div>
+        <Error>введите название своего дела</Error>
       </Header> 
     </>
   )  
