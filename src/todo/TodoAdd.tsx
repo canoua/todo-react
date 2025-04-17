@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState , useRef, useEffect } from "react";
 import { Button } from './Button';
 import styled from "styled-components";
 // import handleClick from
@@ -32,19 +32,29 @@ function TodoAdd() {
     font-size: 25px;
     width: 10%;
   `
-  const [task, Todos] = useState(0);
+  const [task, Todos] = useState();
 
-  function ale() {
+  // для дебага - пропадает фокус при записи состояния
+  const inputRef = useRef(null);
+
+  useEffect(() => {
+    if (inputRef.current) {
+      inputRef.current.focus(); // Установка фокуса на инпут
+    }
+  }, [task]); // Фокусируемся после изменения значения
+
+
+  function ale(e) {
     alert(task);
+    e.preventDefault()
   }
 
   return(
     <Form>
-      <Input value={task} onChange={(e) => Todos(e.target.value)} placeholder='Дело'/>
+      <Input ref={inputRef} value={task} onChange={(e) => Todos(e.target.value)} placeholder='Дело'/>
       <ButtonAdd type='submit' onClick={ale}>+</ButtonAdd>
     </Form> 
   )
 }
-
 
 export default TodoAdd

@@ -31,7 +31,7 @@ function TodoHeader() {
     <>
       <Header> 
         <Title>Что хотите сделать?</Title>
-        <TodoAdd/>
+        {TodoAdd()}
         {/* <Form>
           <Input placeholder='Дело'></Input>
           <ButtonAdd type='submit' onClick={handleClick}>+</ButtonAdd>
