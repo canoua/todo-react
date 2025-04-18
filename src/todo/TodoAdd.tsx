@@ -1,36 +1,12 @@
 import { useState , useRef, useEffect } from "react";
-import { Button } from './Button';
+// import { Button } from './Button';
+import { Form } from "./components/Form";
+import { Input } from "./components/Input";
+import { Error } from "./components/Error";
+import { ButtonAdd } from "./components/ButtonAdd";
 import styled from "styled-components";
 
-function TodoAdd() {
-  const Form = styled.form `
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  `
-  const Input = styled.input `
-    padding: 5px;
-    margin-right: 10px;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid #000;
-    font-size: 25px;
-    width: 90%; 
-    
-    @media(max-width: 375px) {
-      font-size: 20px;
-    }
-  `
-
-  const ButtonAdd = styled(Button) `
-    background-color: #000;
-    color: #fff;
-    padding: 0px 10px;
-    border: none;
-    font-size: 25px;
-    width: 10%;
-  `
+function TodoAdd() { 
   const [task, setTodo] = useState();
   // для дебага - пропадает фокус при записи состояния
   const inputRef = useRef(null);
