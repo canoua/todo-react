@@ -39,7 +39,6 @@ function TodoOutput() {
             <img className="list-done__stub-img" src={cat} alt="cat" />
           </div>  
           <List></List>
-          {/* <ul className="list" id="list"></ul> */}
         </TodoOutputContent>
       </TodoOutput>
     </>
